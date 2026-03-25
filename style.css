@@ -4,6 +4,8 @@
   --card-bg: #f8f9fa;
   --button-bg: #ff6b6b;
   --button-text: #ffffff;
+  --input-bg: #ffffff;
+  --input-border: #cccccc;
 }
 
 [data-theme='dark'] {
@@ -11,6 +13,8 @@
   --text-color: #f0f0f0;
   --card-bg: #2d2d2d;
   --button-bg: #fa5252;
+  --input-bg: #333333;
+  --input-border: #444444;
 }
 
 body {
@@ -18,17 +22,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   min-height: 100vh;
   margin: 0;
+  padding: 40px 0;
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
   text-align: center;
 }
 
-h1 {
-  margin-bottom: 30px;
+h1, h2 {
+  margin-bottom: 20px;
 }
 
 #menu-display {
@@ -86,4 +91,51 @@ button:active {
 #toggle-btn:hover {
   background-color: var(--text-color);
   color: var(--bg-color);
+}
+
+/* Partnership Form Styles */
+#partnership {
+  width: 90%;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+#form-container {
+  background-color: var(--card-bg);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--button-bg);
+}
+
+#partnership button {
+  width: 100%;
 }
