@@ -18,15 +18,26 @@ const menus = [
 
 function recommendMenu() {
   const menuText = document.getElementById('menu-text');
-  const recommendBtn = document.getElementById('recommend-btn');
+  const imageContainer = document.getElementById('image-container');
+  const menuImage = document.getElementById('menu-image');
   
   // Simple animation effect
   menuText.style.opacity = 0;
+  imageContainer.style.display = 'none';
   
   setTimeout(() => {
     const randomIndex = Math.floor(Math.random() * menus.length);
-    menuText.textContent = menus[randomIndex];
+    const selectedMenu = menus[randomIndex];
+    menuText.textContent = selectedMenu;
     menuText.style.opacity = 1;
+
+    // Show image specifically for Pizza
+    if (selectedMenu === "피자 (Pizza)") {
+      menuImage.src = "/hoaluu-pizza-2589575_1920.jpg";
+      imageContainer.style.display = 'block';
+    } else {
+      imageContainer.style.display = 'none';
+    }
   }, 200);
 }
 
