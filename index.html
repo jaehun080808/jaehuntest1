@@ -3,69 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dinner Menu Recommendation</title>
+  <title>Dinner Menu Recommendation - What's for Dinner?</title>
+  <meta name="description" content="Get personalized dinner menu recommendations and explore high-quality food articles.">
+  <meta name="google-adsense-account" content="ca-pub-9491543575378768">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9491543575378768"
+     crossorigin="anonymous"></script>
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
-  <div id="theme-toggle">
-    <button id="toggle-btn" onclick="toggleTheme()">Dark Mode</button>
-  </div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li id="theme-toggle">
+          <button id="toggle-btn" onclick="toggleTheme()">Dark Mode</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-  <section id="main-content">
-    <h1>🍽️ What's for Dinner?</h1>
-    <div id="menu-display">
-      <p id="menu-text">Click the button for a recommendation!</p>
-      <div id="image-container" style="display: none; margin-top: 20px;">
-        <img id="menu-image" src="" alt="Menu Image" style="max-width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <main>
+    <section id="main-content">
+      <h1>🍽️ What's for Dinner?</h1>
+      <p>Stop stressing about what to eat. Let us pick your perfect meal!</p>
+      <div id="menu-display">
+        <p id="menu-text">Click the button for a recommendation!</p>
+        <div id="image-container" style="display: none; margin-top: 20px;">
+          <img id="menu-image" src="" alt="Menu Image" style="max-width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+        </div>
       </div>
-    </div>
-    <button id="recommend-btn" onclick="recommendMenu()">Recommend Menu</button>
-  </section>
+      <button id="recommend-btn" onclick="recommendMenu()">Recommend Menu</button>
+    </section>
 
-  <hr style="width: 80%; margin: 50px auto; border: 0.5px solid var(--card-bg);">
+    <hr style="width: 80%; margin: 50px auto; border: 0.5px solid var(--card-bg);">
 
-  <section id="partnership">
-    <h2>🤝 Partnership Inquiry</h2>
-    <p>Interested in collaborating with us? Send us a message!</p>
-    <div id="form-container">
-      <form action="https://formspree.io/f/mwvwegdr" method="POST">
-        <div class="form-group">
-          <label for="email">Your Email:</label>
-          <input type="email" id="email" name="email" placeholder="example@email.com" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Your Message:</label>
-          <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required></textarea>
-        </div>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
+    <section id="comments">
+      <h2>💬 Community Comments</h2>
+      <div id="disqus_thread"></div>
+      <script>
+          (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://https-jaehuntest1-pages-dev.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </section>
+  </main>
 
-  <hr style="width: 80%; margin: 50px auto; border: 0.5px solid var(--card-bg);">
-
-  <section id="comments">
-    <h2>💬 Comments</h2>
-    <div id="disqus_thread"></div>
-    <script>
-        /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-        /*
-        var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-        */
-        (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://https-jaehuntest1-pages-dev.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </section>
+  <footer>
+    <p>&copy; 2026 Dinner Menu Recommendation. All rights reserved.</p>
+    <ul>
+      <li><a href="/about.html">About Us</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="/privacy.html">Privacy Policy</a></li>
+    </ul>
+  </footer>
 
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
