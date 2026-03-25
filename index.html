@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lotto Number Generator</title>
+  <title>Dinner Menu Recommendation</title>
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
   <div id="theme-toggle">
     <button id="toggle-btn" onclick="toggleTheme()">Dark Mode</button>
   </div>
-  <h1>Lotto Number Generator</h1>
-  <div id="lotto-numbers"></div>
-  <button onclick="generateLottoNumbers()">Generate Numbers</button>
+  <h1>🍽️ What's for Dinner?</h1>
+  <div id="menu-display">
+    <p id="menu-text">Click the button for a recommendation!</p>
+  </div>
+  <button id="recommend-btn" onclick="recommendMenu()">Recommend Menu</button>
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
 </html>
