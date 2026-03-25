@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Blog - Dinner Menu Recommendation</title>
+  <link href='/style.css' rel='stylesheet'>
+  <style>
+    .blog-post-card {
+      background-color: var(--card-bg);
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      text-align: left;
+      width: 100%;
+      max-width: 700px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .blog-post-card:hover {
+      transform: translateY(-5px);
+    }
+    .blog-post-card h3 {
+      margin-top: 0;
+    }
+    .blog-post-card a {
+      color: var(--button-bg);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .meta {
+      font-size: 12px;
+      color: #777;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li id="theme-toggle">
+          <button id="toggle-btn" onclick="toggleTheme()">Dark Mode</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>🍲 Our Food Blog</h1>
+    <p>Discover recipes, food history, and the secrets behind your favorite meals.</p>
+
+    <article class="blog-post-card">
+      <div class="meta">Published: March 25, 2026 | By Admin</div>
+      <h3>The Ultimate Guide to Perfect Kimchi Stew at Home</h3>
+      <p>Kimchi stew (Kimchi-jjigae) is the ultimate comfort food in Korea. Learn the secrets to making an authentic version that tastes just like your favorite Korean restaurant...</p>
+      <a href="/blog-kimchi-stew.html">Read Full Article &rarr;</a>
+    </article>
+
+    <article class="blog-post-card">
+      <div class="meta">Published: March 24, 2026 | By Admin</div>
+      <h3>Why Pizza is the Universal Comfort Food: A History</h3>
+      <p>From the streets of Naples to every corner of the globe, pizza has become the world's favorite meal. We explore the fascinating history of this versatile dish...</p>
+      <a href="/blog-pizza-history.html">Read Full Article &rarr;</a>
+    </article>
+
+    <article class="blog-post-card">
+      <div class="meta">Published: March 23, 2026 | By Admin</div>
+      <h3>Healthy Dinner Alternatives: Low-Calorie Korean Menus</h3>
+      <p>Eating healthy doesn't mean sacrificing flavor. Discover traditional Korean dishes that are naturally low in calories but high in nutrients and satisfaction...</p>
+      <a href="/blog-healthy-korean.html">Read Full Article &rarr;</a>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Dinner Menu Recommendation. All rights reserved.</p>
+    <ul>
+      <li><a href="/about.html">About Us</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="/privacy.html">Privacy Policy</a></li>
+    </ul>
+  </footer>
+
+  <script defer type="text/javascript" src="/main.js"></script>
+</body>
+</html>
