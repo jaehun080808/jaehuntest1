@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
+  <title>Lotto Number Generator</title>
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
+  <div id="theme-toggle">
+    <button id="toggle-btn" onclick="toggleTheme()">Dark Mode</button>
+  </div>
+  <h1>Lotto Number Generator</h1>
+  <div id="lotto-numbers"></div>
+  <button onclick="generateLottoNumbers()">Generate Numbers</button>
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
 </html>
