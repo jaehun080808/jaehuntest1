@@ -139,3 +139,23 @@ button:active {
 #partnership button {
   width: 100%;
 }
+
+/* Comments Section Styles */
+#comments {
+  width: 90%;
+  max-width: 800px;
+  margin-top: 20px;
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+#comments h2 {
+  text-align: center;
+}
+
+#disqus_thread {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+}
